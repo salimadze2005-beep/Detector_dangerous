@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+
+if [ -x ".venv/Scripts/python.exe" ]; then
+  exec ".venv/Scripts/python.exe" tools/check_repository_hygiene.py --staged
+fi
+
+exec python tools/check_repository_hygiene.py --staged

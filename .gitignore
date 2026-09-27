@@ -1,0 +1,64 @@
+# Окружение и IDE
+.venv/
+.venv.not-portable-*/
+.venv-audio-bench/
+venv/
+.idea/
+__pycache__/
+*.py[cod]
+
+# Телеметрия и записи с микрофона
+data/
+*.sqlite
+*.sqlite3
+*.log
+*.zip
+*.mp4
+recording_*.wav
+recording*.wav
+q3b_v4fresh/
+Ultralytics/
+
+# Конфигурация объекта: может содержать RTSP-адреса, пароли и webhook-токены.
+# В репозитории допускается только detector_config.example.json.
+detector_config.json
+
+# Результаты сборок и локальная диагностика
+build/
+dist/
+reports/
+
+# Большие локальные веса / checkpoints
+models/panns/*.pth
+models/panns/*.part
+models/panns/*.csv
+models/panns_data/
+
+# Видео — демоматериалы, слишком тяжёлые для git
+*.mp4
+data/event_clips/
+
+# Стандартные веса YOLOv8 (скачаются автоматически при первом запуске)
+yolov8n.pt
+yolov8n-pose.pt
+
+# Диагностический мусор
+чяе.py
+wtf.py
+
+# ОС
+Thumbs.db
+.DS_Store
+# Локальные веса моделей (загружаются tools/bootstrap.py)
+model-ru/
+models/yamnet/
+models/yolov8n-pose.onnx
+models/faster-whisper-small/
+models/faster-whisper-small.new/
+models/ast/
+models/ast.new/
+models/.downloads/
+models/yolov8*-pose.pt
+yolov8*-pose.pt
+model-ru.invalid/
+model-ru.new/
